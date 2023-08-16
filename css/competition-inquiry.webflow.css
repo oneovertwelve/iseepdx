@@ -282,6 +282,17 @@ h1 {
   font-size: 18px;
 }
 
+.thankyou-overlay {
+  opacity: 1;
+  mix-blend-mode: color;
+  background-color: #e9cbb7;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
 @media screen and (max-width: 991px) {
   .submit-button {
     font-size: 48px;
