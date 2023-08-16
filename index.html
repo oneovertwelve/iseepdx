@@ -41,6 +41,31 @@
     <div class="marquee">
       <div class="w-embed">
         <style>
+
+@-webkit-keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-92%));
+  }
+}
+@-moz-keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-92%));
+  }
+}
+@-o-keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-92%));
+  }
+}
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -50,6 +75,9 @@
   }
 }
 .scroll {
+  -webkit-animation: scroll 120s linear infinite;
+  -moz-animation: scroll 120s linear infinite;
+  -o-animation: scroll 120s linear infinite;
   animation: scroll 120s linear infinite;
 }
 </style>
