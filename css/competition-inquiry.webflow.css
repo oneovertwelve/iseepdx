@@ -126,10 +126,6 @@ h1 {
   overflow: hidden;
 }
 
-.section-2 {
-  height: 100vh;
-}
-
 .track-horizontal {
   height: 100%;
   flex-direction: row;
@@ -291,6 +287,32 @@ h1 {
   bottom: 0%;
   left: 0%;
   right: 0%;
+}
+
+.marquee {
+  z-index: -1;
+  width: 100%;
+  background-color: #f07c59;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  width: 100%;
+  flex: none;
+  justify-content: space-around;
+  display: flex;
+}
+
+.marquee-content.scroll {
+  width: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 991px) {
