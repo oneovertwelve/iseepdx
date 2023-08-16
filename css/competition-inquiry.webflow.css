@@ -260,6 +260,7 @@ h1 {
 }
 
 .slider {
+  height: 100%;
   max-width: none;
   flex: none;
 }
@@ -313,6 +314,8 @@ h1 {
 .marquee-content.scroll {
   width: auto;
   height: 100%;
+  display: block;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
