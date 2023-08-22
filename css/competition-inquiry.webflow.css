@@ -295,7 +295,6 @@ h1 {
 .marquee {
   z-index: -1;
   width: 100%;
-  background-color: #f07c59;
   align-items: center;
   display: flex;
   position: absolute;
