@@ -175,13 +175,13 @@ h1 {
 
 .iseepdx-h2 {
   color: #f8f4ec;
-  text-align: center;
   letter-spacing: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
   text-shadow: 3px 3px #ed1c24;
-  font-family: Migrena Grotesque, sans-serif;
-  font-size: 42px;
+  font-family: Oswald, sans-serif;
+  font-size: 37px;
+  line-height: 1.2;
 }
 
 .divider-line {
@@ -200,8 +200,8 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
   margin-right: auto;
-  font-family: Migrena Grotesque, sans-serif;
-  font-size: 42px;
+  font-family: Oswald, sans-serif;
+  font-size: 37px;
   font-weight: 900;
   line-height: 42px;
 }
