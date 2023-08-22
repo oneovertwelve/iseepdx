@@ -343,6 +343,10 @@ h1 {
     width: 30%;
     bottom: 15%;
   }
+
+  .iseepdx-h2, .submit-button-2 {
+    font-size: 26px;
+  }
 }
 
 
