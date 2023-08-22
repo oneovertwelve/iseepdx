@@ -165,6 +165,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 103px;
   display: flex;
   position: absolute;
   top: 0%;
@@ -345,6 +346,7 @@ h1 {
   }
 
   .iseepdx-h2, .submit-button-2 {
+    text-shadow: 2px 2px #ed1c24;
     font-size: 26px;
   }
 }
