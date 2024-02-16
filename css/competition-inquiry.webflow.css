@@ -1,3 +1,10 @@
+:root {
+  --blue: blue;
+  --yellow: yellow;
+  --floral-white: white;
+  --red: #ed1c24;
+}
+
 h1 {
   color: rgba(0, 0, 0, 0);
   text-align: center;
@@ -56,7 +63,7 @@ h1 {
 }
 
 .textarea:focus {
-  border-color: #00f;
+  border-color: var(--blue);
 }
 
 .spacer-20 {
@@ -65,7 +72,7 @@ h1 {
 }
 
 .submit-button {
-  color: #00f;
+  color: var(--blue);
   background-color: rgba(0, 0, 0, 0);
   font-size: 54px;
   font-style: normal;
@@ -74,7 +81,7 @@ h1 {
 }
 
 .submit-button:active {
-  color: #ff0;
+  color: var(--yellow);
 }
 
 .text-field {
@@ -83,7 +90,7 @@ h1 {
 }
 
 .text-field:focus {
-  border-color: #00f;
+  border-color: var(--blue);
 }
 
 .select-field {
@@ -93,7 +100,7 @@ h1 {
 }
 
 .select-field:focus {
-  border-color: #00f;
+  border-color: var(--blue);
 }
 
 .heading {
@@ -135,12 +142,13 @@ h1 {
 
 .nav-wrapper {
   z-index: 200;
-  background-color: #fff;
+  background-color: #ece6d7;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: .8vw;
+  padding-bottom: .8vw;
+  padding-left: 1.7vw;
   display: flex;
   position: fixed;
   top: 0%;
@@ -174,12 +182,16 @@ h1 {
   right: 0%;
 }
 
+.content-wrapper.form {
+  display: none;
+}
+
 .iseepdx-h2 {
   color: #f8f4ec;
   letter-spacing: 1px;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: var(--floral-white);
   text-transform: uppercase;
-  text-shadow: 3px 3px #ed1c24;
+  text-shadow: 3px 3px 0 var(--red);
   font-family: Oswald, sans-serif;
   font-size: 37px;
   line-height: 1.2;
@@ -188,16 +200,16 @@ h1 {
 .divider-line {
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: var(--floral-white);
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .submit-button-2 {
-  color: #fff;
+  color: var(--floral-white);
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
-  text-shadow: 4px 4px #ed1c24;
+  text-shadow: 4px 4px 0 var(--red);
   background-color: rgba(0, 0, 0, 0);
   margin-left: auto;
   margin-right: auto;
@@ -209,7 +221,7 @@ h1 {
 
 .submit-button-2:hover {
   color: #ed1c24;
-  text-shadow: 4px 4px #fff;
+  text-shadow: 4px 4px 0 var(--floral-white);
 }
 
 .useepdx {
@@ -222,11 +234,12 @@ h1 {
   width: 100%;
   max-width: 100%;
   min-height: 0;
-  color: #fff;
+  border-style: none none solid;
+  border-width: 0 0 4px;
+  border-color: black black var(--floral-white);
+  color: var(--floral-white);
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  border: 0 #000;
-  border-bottom: 4px solid #fff;
   margin-bottom: 22px;
   font-family: neue-haas-grotesk-text, sans-serif;
   font-size: 18px;
@@ -234,19 +247,19 @@ h1 {
 }
 
 .text-field-2:hover {
-  border-bottom-color: #ed1c24;
+  border-bottom-color: var(--red);
 }
 
 .text-field-2:focus {
-  border-bottom-color: #fff;
+  border-bottom-color: var(--floral-white);
 }
 
 .text-field-2::-ms-input-placeholder {
-  color: #fff;
+  color: var(--floral-white);
 }
 
 .text-field-2::placeholder {
-  color: #fff;
+  color: var(--floral-white);
 }
 
 .form-block-2 {
@@ -257,7 +270,7 @@ h1 {
 .div-block {
   width: 100%;
   height: 10px;
-  background-color: #fff;
+  background-color: var(--floral-white);
 }
 
 .slider {
@@ -267,14 +280,14 @@ h1 {
 }
 
 .success-message-2 {
-  color: #fff;
+  color: var(--floral-white);
   background-color: rgba(0, 0, 0, 0);
   font-family: Migrena Grotesque, sans-serif;
   font-size: 18px;
 }
 
 .error-message {
-  color: #ed1c24;
+  color: var(--red);
   background-color: rgba(0, 0, 0, 0);
   font-family: Migrena Grotesque, sans-serif;
   font-size: 18px;
@@ -297,7 +310,7 @@ h1 {
   z-index: -1;
   width: 100%;
   align-items: center;
-  display: flex;
+  display: none;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -318,6 +331,19 @@ h1 {
   height: 100%;
   display: block;
   overflow: hidden;
+}
+
+.text-block {
+  color: var(--floral-white);
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.image {
+  height: 2.5vw;
+}
+
+.link-block {
+  margin-right: auto;
 }
 
 @media screen and (max-width: 991px) {
@@ -346,7 +372,7 @@ h1 {
   }
 
   .iseepdx-h2, .submit-button-2 {
-    text-shadow: 2px 2px #ed1c24;
+    text-shadow: 2px 2px 0 var(--red);
     font-size: 26px;
   }
 }
